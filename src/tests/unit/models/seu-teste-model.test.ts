@@ -80,6 +80,7 @@ describe('Testar a Model', () => {
       expect(result).to.be.equal(carMock);
     })
   })
+  
   describe('Testar o método delete', () => {
     before(() => {
       sinon.stub(Model, 'findOneAndDelete').resolves(carMock);
